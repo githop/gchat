@@ -1,0 +1,6 @@
+mutation SendKeyPress($input: KeyPressCreateInput!) {
+  onKeypress(input: $input) {
+    isTyping
+    username
+  }
+}
