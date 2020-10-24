@@ -7,10 +7,17 @@ Dependencies
 - node
 - yarn or npm
 
-Run the `build` script
+Build commands
 
-    $ ./build
+    docker-compose build backend
+    docker-compose run backend rake db:create db:migrate
+    cd frontend
+    #npm install
+    yarn install
 
-Run the `run` script
+Run commands
 
-    $ ./run.sh
+    docker-compose up -d
+    cd frontend
+    #npm install
+    yarn start
