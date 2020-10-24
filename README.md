@@ -7,6 +7,10 @@ Dependencies
 - node
 - yarn or npm
 
-run the install script
+Run the `build` script
 
-    $ ./install.sh
+    $ ./build
+
+Run the `run` script
+
+    $ ./run.sh

@@ -1,9 +1,7 @@
 #!/bin/bash
 
 docker-compose build backend
-docker-compse up -d
+docker-compose run backend rake db:create db:migrate
 cd frontend
 #npm install
-#npm run start
 yarn install
-yarn start
