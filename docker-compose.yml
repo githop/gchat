@@ -3,7 +3,7 @@ services:
   db:
     image: postgres
     volumes:
-      - ./tmp/db:/var/lib/postgresql/data
+      - ./backend/pg/db:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: password
   backend:
@@ -15,10 +15,3 @@ services:
       - "3000:3000"
     depends_on:
       - db
-  frontend:
-    depends_on:
-      - backend
-    build: ./frontend
-    command: "yarn start"
-    ports:
-      - "3001:3001"

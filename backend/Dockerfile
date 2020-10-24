@@ -6,7 +6,6 @@ COPY Gemfile /myapp/backend/Gemfile
 COPY Gemfile.lock /myapp/backend/Gemfile.lock
 RUN bundle install
 COPY . /myapp/backend
-
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
