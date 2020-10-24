@@ -1,6 +1,7 @@
 #!/bin/bash
 
-docker-compose up -d --build
+docker-compose build backend
+docker-compse up -d
 cd frontend
 #npm install
 #npm run start
